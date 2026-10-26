@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Barbearia | Demonstração de site premium | Estação Site</title>
+<meta name="description" content="Demonstração de site premium para uma barbearia fictícia, criada pela Estação Site: corte, barba e cuidado masculino em uma experiência de alto padrão.">
+<meta property="og:title" content="Barbearia | Demonstração de site premium"><meta property="og:description" content="Demonstração criada pela Estação Site."><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.className="js"</script>
+<style>
+:root{--k:#07080a;--c:#0e1013;--m:#aeb5bf;--au:#d6bd86;--l:rgba(255,255,255,.14);color-scheme:dark;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--k);color:#f5f6f7;font:400 16px/1.65 Manrope,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.sr{font-family:"Bodoni Moda",Didot,Georgia,serif;font-weight:700;line-height:1}
+.mt{background:linear-gradient(180deg,#fff,#cfd4db 46%,#6e7581 54%,#eceff2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.au{background:linear-gradient(180deg,#f3e3b8,#d6bd86 50%,#9c8450);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic;font-weight:500}
+section{position:relative;padding:clamp(72px,11vw,128px) 20px;overflow:hidden}.w{max-width:1120px;margin:auto;position:relative;z-index:1}
+h2{font-size:clamp(36px,6.4vw,76px);letter-spacing:-.02em;margin-bottom:22px}
+.ey{font-size:12px;font-weight:700;letter-spacing:.28em;color:var(--au);margin-bottom:18px;text-transform:uppercase}
+.lead{color:var(--m);max-width:540px;font-size:18px}
+.row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.cd{background:linear-gradient(155deg,rgba(255,255,255,.1),rgba(255,255,255,.02));backdrop-filter:blur(12px);border:1px solid var(--l);border-radius:4px;box-shadow:0 30px 70px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.18);padding:30px;transition:transform .4s,box-shadow .4s,border-color .4s}
+.cd:hover{transform:translateY(-6px);border-color:rgba(214,189,134,.55);box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 60px rgba(214,189,134,.12),inset 0 1px 0 rgba(255,255,255,.25)}
+.cd h3{font-size:clamp(20px,2.4vw,28px);font-weight:600;margin-bottom:12px}.cd p{color:var(--m)}
+.bt{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:2px;font:700 12px Manrope,sans-serif;letter-spacing:.18em;border:1px solid var(--l);cursor:pointer;transition:transform .3s,box-shadow .3s,background .3s}.bt:hover{transform:translateY(-2px)}
+.gd{background:linear-gradient(180deg,#f3e3b8,#d6bd86 55%,#a98f56);color:#14110a;border-color:#ecdcaa;box-shadow:0 10px 36px rgba(214,189,134,.26)}.gd:hover{box-shadow:0 14px 48px rgba(214,189,134,.42)}
+.gl{background:rgba(255,255,255,.06);backdrop-filter:blur(10px)}.gl:hover{background:rgba(255,255,255,.13)}
+:focus-visible{outline:2px solid var(--au);outline-offset:3px}
+header{position:fixed;inset:0 0 auto;z-index:50;padding-top:env(safe-area-inset-top,0px)}
+header::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(7,8,10,.84);backdrop-filter:blur(16px);border-bottom:1px solid var(--l);opacity:0;transition:opacity .4s}header.sc::before{opacity:1}
+.nv{max-width:1120px;margin:auto;height:68px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.lg{position:relative;z-index:2;font:700 20px "Bodoni Moda",Georgia,serif;letter-spacing:.24em}
+nav{display:flex;align-items:center;gap:32px}nav ul{display:flex;gap:26px;list-style:none;padding:0}
+nav li a{font-size:12px;font-weight:600;letter-spacing:.16em;color:#d9dde2;transition:color .2s}nav li a:hover{color:var(--au)}
+#mb{display:none;position:relative;z-index:2;width:48px;height:48px;border:0;background:none;cursor:pointer;gap:7px;place-content:center}
+#mb i{display:block;width:24px;height:2px;background:#fff;transition:.3s}
+#mb[aria-expanded=true] i:first-child{transform:translateY(4.5px) rotate(45deg)}#mb[aria-expanded=true] i:last-child{transform:translateY(-4.5px) rotate(-45deg)}
+.hero{min-height:100svh;display:grid;align-items:end;padding:130px 20px 72px;background:radial-gradient(60% 50% at 75% 20%,rgba(255,255,255,.16),transparent 65%),linear-gradient(180deg,#0b0c0f,#050607)}
+.hero::before{content:"";position:absolute;inset:0;background:conic-gradient(from 200deg at 78% -10%,transparent 0,rgba(255,255,255,.22) 7%,transparent 18%);translate:0 calc(var(--py,0px)*.4)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050607 8%,rgba(5,6,7,.6) 50%,transparent),linear-gradient(0deg,#050607,transparent 35%)}
+.dust{position:absolute;inset:0;background:radial-gradient(1.5px 1.5px at 20% 30%,#fff9,transparent),radial-gradient(1px 1px at 70% 60%,#fff7,transparent),radial-gradient(1.5px 1.5px at 85% 25%,#fff8,transparent),radial-gradient(1px 1px at 45% 80%,#fff6,transparent),radial-gradient(1px 1px at 60% 15%,#fff7,transparent);animation:ds 12s ease-in-out infinite alternate}@keyframes ds{to{translate:0 -26px}}
+.chair{position:absolute;right:max(-30px,calc(50% - 600px));bottom:0;width:min(380px,max(32vw,240px));translate:0 calc(var(--py,0px)*-.12);filter:drop-shadow(0 40px 60px #000)}
+.hero h1{font-size:clamp(48px,9vw,124px);letter-spacing:-.03em;line-height:.92}
+.im{background:linear-gradient(180deg,var(--k),var(--c))}.im h2{font-size:clamp(44px,10vw,132px);max-width:920px;line-height:.95}
+.rl{height:44px;margin:10px 0 40px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 1px,transparent 1px 12px);-webkit-mask:linear-gradient(90deg,#000,transparent);mask:linear-gradient(90deg,#000,transparent);position:relative}
+.qt{max-width:480px;margin-left:auto}.qt .sr{font-size:clamp(26px,3.4vw,38px);margin-bottom:10px}
+.xp{display:grid;gap:16px;margin-top:44px}.x1{min-height:300px;background-image:radial-gradient(circle at 80% 110%,rgba(214,189,134,.24),transparent 55%),linear-gradient(155deg,rgba(255,255,255,.1),rgba(255,255,255,.02))}
+.x1::after{content:"";display:block;width:130px;height:130px;margin-top:36px;border-radius:50%;border:1px solid var(--l);background:conic-gradient(transparent,rgba(255,255,255,.4),transparent 30%);animation:rt 12s linear infinite}@keyframes rt{to{rotate:360deg}}
+.x4{border-color:rgba(214,189,134,.4)}
+.sv2{display:grid;gap:40px}
+.rw{display:flex;align-items:baseline;gap:16px;padding:22px 0;border-bottom:1px solid var(--l);transition:padding .3s,background .3s}.rw:hover{padding-left:14px;background:linear-gradient(90deg,rgba(214,189,134,.12),transparent)}
+.rw h3{font-size:clamp(20px,3vw,32px);font-weight:500}.rw i{flex:1;min-width:16px;border-bottom:1px dotted rgba(255,255,255,.28)}.rw b{font:700 clamp(22px,3.4vw,36px) "Bodoni Moda",serif;color:var(--au)}
+.bgo{width:min(230px,56%);margin-top:36px;filter:drop-shadow(0 24px 24px #000)}
+.st3{position:relative;height:clamp(400px,62vw,580px);perspective:1100px;margin-top:30px}
+.sg{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--rx,8deg)) rotateY(var(--ry,-10deg));transition:transform .3s}
+.sg::before{content:"";position:absolute;left:12%;right:12%;bottom:6%;height:90px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.2),transparent);transform:rotateX(70deg) translateZ(-40px)}
+.ob{position:absolute;left:var(--x);top:var(--y);width:calc(var(--s)*1.25);height:calc(var(--s)*1.25);transform:translateZ(var(--z));filter:drop-shadow(0 30px 22px rgba(0,0,0,.75));animation:fl 7s ease-in-out infinite alternate;animation-delay:var(--d,0s)}@keyframes fl{to{margin-top:-16px}}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;grid-auto-flow:dense;gap:12px;margin-top:44px}
+.gt{position:relative;overflow:hidden;border:1px solid var(--l);background:var(--img,none) center/cover,radial-gradient(80% 70% at 70% 20%,rgba(255,255,255,.14),transparent 65%),linear-gradient(145deg,#2a2e35,#0b0c0f);display:flex;align-items:flex-end;padding:14px;transition:border-color .4s}
+.gt svg{position:absolute;inset:10% 14%;width:72%;height:76%;opacity:.55;transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .5s;filter:drop-shadow(0 20px 20px #000)}.gt:hover svg{transform:scale(1.14) rotate(-4deg);opacity:.95}.gt:hover{border-color:rgba(214,189,134,.6)}
+.gt figcaption{position:relative;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:7px 12px;background:rgba(7,8,10,.6);backdrop-filter:blur(8px);border:1px solid var(--l)}
+.t1{grid-column:span 2;grid-row:span 2;clip-path:polygon(0 0,92% 0,100% 8%,100% 100%,0 100%)}.t2,.t6{grid-column:span 2}
+.ba{position:relative;height:clamp(320px,56vw,520px);margin-top:44px;border:1px solid var(--l);overflow:hidden;--p:50%;background:radial-gradient(60% 60% at 50% 30%,rgba(255,255,255,.18),transparent 70%),linear-gradient(180deg,#1c1f25,#08090b)}
+.ly{position:absolute;inset:0}.ly svg{position:absolute;left:50%;bottom:0;height:94%;translate:-50% 0}.a2{clip-path:inset(0 0 0 var(--p))}
+.hn{position:absolute;top:0;bottom:0;left:var(--p);width:2px;background:linear-gradient(var(--au),#fff);box-shadow:0 0 20px rgba(214,189,134,.6)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;min-height:0;opacity:0;cursor:ew-resize;padding:0;border:0}
+.ba b{position:absolute;bottom:16px;font-size:11px;letter-spacing:.2em;padding:7px 12px;background:rgba(7,8,10,.65);border:1px solid var(--l)}
+.note{color:var(--m);font-size:13px;margin-top:16px}
+.pls{display:grid;gap:18px;margin-top:48px;align-items:center}
+.pl{padding:34px 28px}.pl h3{font-size:26px;letter-spacing:.14em;font-weight:600}.pl .pr{font:700 clamp(48px,6vw,72px)/1 "Bodoni Moda",serif;margin:18px 0 4px}.pl small{display:block;color:var(--m);font-size:12px;letter-spacing:.1em;margin-bottom:22px}
+.pl ul{list-style:none;padding:0;margin:0 0 28px}.pl li{padding:10px 0;border-top:1px solid var(--l);color:#d7dbe0;font-size:15px}.pl .bt{width:100%}
+.pm{padding:48px 32px;border-color:rgba(214,189,134,.6);background:linear-gradient(160deg,rgba(214,189,134,.2),rgba(255,255,255,.03));box-shadow:0 40px 100px rgba(0,0,0,.7),0 0 90px rgba(214,189,134,.2),inset 0 1px 0 rgba(255,255,255,.3)}
+.ag{display:grid;gap:40px}
+form.cd{display:grid;gap:16px;grid-template-columns:1fr 1fr}form label{display:grid;gap:8px;font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--m);text-transform:uppercase}.fw{grid-column:1/-1}
+input,select{width:100%;min-height:52px;padding:0 14px;background:rgba(0,0,0,.45);border:1px solid var(--l);border-radius:2px;color:#fff;font:500 16px Manrope,sans-serif}
+#ok{grid-column:1/-1;padding:14px;border:1px solid rgba(214,189,134,.5);color:#f3e3b8;font-size:14px}
+.mp{position:relative;height:clamp(260px,40vw,380px);margin:40px 0 20px;border:1px solid var(--l);overflow:hidden;background:linear-gradient(115deg,transparent 46%,rgba(255,255,255,.12) 46.5% 48%,transparent 48.5%),linear-gradient(20deg,transparent 60%,rgba(255,255,255,.1) 60.5% 62%,transparent 62.5%),repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 44px),repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 44px),radial-gradient(70% 70% at 50% 50%,#1b1e24,#0a0b0e)}
+.pin{position:absolute;left:50%;top:46%;width:18px;height:18px;margin:-9px;border-radius:50%;background:var(--au);box-shadow:0 0 0 8px rgba(214,189,134,.2),0 0 50px rgba(214,189,134,.7)}
+.tg{position:absolute;left:50%;top:46%;margin-top:26px;translate:-50% 0;white-space:nowrap;font-size:11px;font-weight:700;letter-spacing:.2em;padding:8px 14px;background:rgba(7,8,10,.7);border:1px solid var(--l)}
+.fq{max-width:760px;margin-top:36px}details{border-bottom:1px solid var(--l)}summary{cursor:pointer;list-style:none;position:relative;padding:22px 36px 22px 0;font:600 clamp(18px,2.4vw,24px) "Bodoni Moda",serif}summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;color:var(--au);font:400 28px Manrope;transition:transform .3s}details[open] summary::after{transform:rotate(45deg)}details p{color:var(--m);padding:0 0 22px;max-width:620px}
+.fin{text-align:center;padding-block:clamp(110px,16vw,200px);background:radial-gradient(60% 60% at 50% 0,rgba(255,255,255,.14),transparent 70%),radial-gradient(40% 40% at 50% 100%,rgba(214,189,134,.22),transparent 70%),var(--c)}
+.fin h2{font-size:clamp(46px,10vw,132px);line-height:.92;margin-inline:auto}.fin .lead{margin:0 auto}.fin .bt{margin-top:36px}
+footer{border-top:1px solid var(--l);padding:56px 20px calc(36px + env(safe-area-inset-bottom,0px));color:var(--m);font-size:14px;text-align:center}
+footer .lg{display:block;color:#fff;margin-bottom:18px}footer ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;list-style:none;padding:0;margin:0 0 26px}footer a:hover{color:var(--au)}
+.js .r{opacity:0;translate:0 22px;transition:opacity .8s,translate .8s,transform .4s,box-shadow .4s,border-color .4s}.js .r.v{opacity:1;translate:none}
+@media(min-width:900px){.xp{grid-template-columns:1.1fr 1fr 1fr}.x1{grid-row:span 2}.x2{grid-column:span 2}.sv2{grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}.gal{grid-template-columns:repeat(6,1fr)}.t1{grid-column:span 3;grid-row:span 3}.t2{grid-column:span 3;grid-row:span 2}.t3{grid-column:span 2;grid-row:span 2}.t4{grid-row:span 2}.t5{grid-column:span 3}.t6{grid-column:span 6}.pls{grid-template-columns:1fr 1.12fr 1fr}.ag{grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}}
+@media(max-width:999px){#mb{display:grid}nav{position:fixed;inset:0;z-index:1;flex-direction:column;justify-content:center;gap:34px;background:rgba(5,6,7,.97);backdrop-filter:blur(20px);opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}nav.o{opacity:1;visibility:visible}nav ul{flex-direction:column;align-items:center;gap:22px}nav li a{font:500 30px "Bodoni Moda",serif;letter-spacing:.04em}}
+@media(max-width:999px){.chair{opacity:.5}}@media(max-width:700px){.chair{width:92vw;opacity:.45;right:-24%}.ob{width:calc(var(--s)*.85);height:calc(var(--s)*.85)}form.cd{grid-template-columns:1fr}.qt{margin-left:0}}
+@media(hover:none){.sg{animation:sw 9s ease-in-out infinite alternate}@keyframes sw{from{transform:rotateX(8deg) rotateY(-14deg)}to{transform:rotateX(4deg) rotateY(14deg)}}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .r{opacity:1;translate:none}}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="mt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f8fa"/><stop offset=".45" stop-color="#8b93a0"/><stop offset=".55" stop-color="#e6e9ed"/><stop offset="1" stop-color="#555c67"/></linearGradient>
+<linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3e3b8"/><stop offset="1" stop-color="#9c8450"/></linearGradient>
+<symbol id="sc" viewBox="0 0 100 100"><path d="M24 8l30 50M76 8L46 58" stroke="url(#mt)" stroke-width="6" stroke-linecap="round"/><circle cx="34" cy="76" r="14" fill="none" stroke="url(#mt)" stroke-width="6"/><circle cx="66" cy="76" r="14" fill="none" stroke="url(#mt)" stroke-width="6"/></symbol>
+<symbol id="rz" viewBox="0 0 100 100"><rect x="6" y="44" width="54" height="16" rx="8" fill="url(#mt)"/><path d="M56 46l38-18v34l-38-2z" fill="#dfe3e8"/><circle cx="62" cy="52" r="4" fill="#14161a"/></symbol>
+<symbol id="cb" viewBox="0 0 100 100"><rect x="6" y="30" width="88" height="14" rx="5" fill="url(#mt)"/><path d="M12 60H88" stroke="#b9c0ca" stroke-width="26" stroke-dasharray="3 4"/></symbol>
+<symbol id="bt" viewBox="0 0 100 100"><rect x="38" y="6" width="24" height="14" rx="3" fill="url(#gd)"/><rect x="26" y="20" width="48" height="74" rx="14" fill="#ffffff18" stroke="url(#mt)" stroke-width="3"/><rect x="34" y="44" width="32" height="26" rx="3" fill="url(#gd)"/></symbol>
+<symbol id="cl" viewBox="0 0 100 100"><rect x="30" y="6" width="40" height="68" rx="16" fill="url(#mt)"/><rect x="30" y="72" width="40" height="16" fill="#dfe3e8"/><path d="M30 92H70" stroke="#dfe3e8" stroke-width="6" stroke-dasharray="3 3"/><circle cx="50" cy="34" r="7" fill="#0b0c0e"/></symbol>
+<symbol id="tw" viewBox="0 0 100 100"><rect x="8" y="28" width="84" height="46" rx="6" fill="#e9ecef"/><path d="M8 44H92M8 60H92" stroke="#9aa1ab" stroke-width="3"/></symbol>
+<symbol id="ch" viewBox="0 0 200 230"><rect x="76" y="6" width="50" height="26" rx="13" fill="url(#mt)"/><path d="M84 34h34l14 96-52 4z" fill="#1c1f25" stroke="url(#mt)" stroke-width="2"/><rect x="56" y="128" width="116" height="28" rx="14" fill="#23272e" stroke="url(#mt)" stroke-width="2"/><rect x="92" y="96" width="76" height="10" rx="5" fill="url(#mt)"/><rect x="108" y="156" width="14" height="46" fill="url(#mt)"/><path d="M60 216q50-28 104 0z" fill="url(#mt)"/><rect x="150" y="150" width="34" height="8" rx="4" transform="rotate(35 150 150)" fill="url(#mt)"/></symbol>
+<symbol id="hd" viewBox="0 0 200 240"><path d="M16 240c0-52 38-64 84-64s84 12 84 64z" fill="#3b4048" stroke="#ffffff30"/><rect x="82" y="150" width="36" height="40" fill="#59606b"/><ellipse cx="100" cy="104" rx="46" ry="58" fill="#6a717d" stroke="#ffffff30"/></symbol>
+</defs></svg>
+<header><div class="nv"><a class="lg" href="#inicio" aria-label="Barbearia, início">BARBEARIA</a>
+<nav id="mn" aria-label="Principal"><ul><li><a href="#inicio">INÍCIO</a></li><li><a href="#experiencia">EXPERIÊNCIA</a></li><li><a href="#servicos">SERVIÇOS</a></li><li><a href="#galeria">GALERIA</a></li><li><a href="#precos">PREÇOS</a></li><li><a href="#contato">CONTATO</a></li></ul><a class="bt gd" href="#agendar">AGENDAR HORÁRIO</a></nav>
+<button id="mb" aria-label="Abrir menu" aria-expanded="false" aria-controls="mn"><i></i><i></i></button></div></header>
+<main>
+<section class="hero" id="inicio"><div class="dust"></div><svg class="chair" viewBox="0 0 200 230" aria-hidden="true"><use href="#ch"/></svg>
+<div class="w"><p class="ey">Demonstração · Estação Site</p><h1><span class="mt">SEU ESTILO.</span><br><span class="au">SUA PRESENÇA.</span></h1>
+<p class="lead" style="margin-top:26px">Corte, barba e cuidado masculino transformados em uma experiência premium.</p>
+<div class="row"><a class="bt gd" href="#agendar">AGENDAR HORÁRIO</a><a class="bt gl" href="#experiencia">CONHECER A EXPERIÊNCIA</a></div></div></section>
+
+<section class="im"><div class="w"><p class="ey r">Precisão</p><h2 class="mt r">PRECISÃO EM CADA DETALHE.</h2><div class="rl r" aria-hidden="true"></div>
+<div class="cd qt r"><p class="sr">Não é apenas um corte.</p><p class="lead">É a experiência de sair se sentindo diferente.</p></div></div></section>
+
+<section id="experiencia"><div class="w"><p class="ey r">Experiência</p><h2 class="mt r">MAIS QUE UMA BARBEARIA.</h2><p class="lead r">Um espaço pensado para transformar o cuidado masculino em uma experiência completa.</p>
+<div class="xp"><article class="cd x1 r"><h3>ATENDIMENTO PERSONALIZADO</h3><p>Experiência pensada para cada cliente.</p></article><article class="cd x2 r"><h3>PRECISÃO</h3><p>Técnica e atenção aos mínimos detalhes.</p></article><article class="cd x3 r"><h3>AMBIENTE</h3><p>Conforto, estilo e personalidade.</p></article><article class="cd x4 r"><h3>EXPERIÊNCIA</h3><p>Muito mais do que simplesmente cortar o cabelo.</p></article></div></div></section>
+
+<section id="servicos"><div class="w sv2"><div><p class="ey r">Serviços</p><h2 class="mt r">SERVIÇOS.</h2><p class="lead r">Valores demonstrativos, que não representam preços reais.</p><svg class="bgo r" viewBox="0 0 100 100" aria-hidden="true"><use href="#rz"/></svg></div>
+<div class="r"><div class="rw"><h3>CORTE MASCULINO</h3><i></i><b>R$ 70</b></div><div class="rw"><h3>BARBA</h3><i></i><b>R$ 50</b></div><div class="rw"><h3>CORTE + BARBA</h3><i></i><b>R$ 110</b></div><div class="rw"><h3>BARBA COM NAVALHA</h3><i></i><b>R$ 80</b></div><div class="rw"><h3>ACABAMENTO</h3><i></i><b>R$ 30</b></div><div class="rw"><h3>CAMUFLAGEM CAPILAR</h3><i></i><b>R$ 90</b></div><div class="rw"><h3>HIDRATAÇÃO</h3><i></i><b>R$ 60</b></div><div class="rw"><h3>CONSULTORIA DE ESTILO</h3><i></i><b>R$ 100</b></div></div></div></section>
+
+<section id="ritual"><div class="w"><p class="ey r">Ritual</p><h2 class="mt r">O RITUAL.</h2><p class="lead r">Ferramentas, texturas e luz em camadas.</p>
+<div class="st3" aria-hidden="true"><div class="sg">
+<svg class="ob" viewBox="0 0 200 230" style="--x:34%;--y:4%;--s:min(300px,46%);--z:0px"><use href="#ch"/></svg>
+<svg class="ob" viewBox="0 0 100 100" style="--x:6%;--y:36%;--s:130px;--z:120px;--d:-2s"><use href="#sc"/></svg>
+<svg class="ob" viewBox="0 0 100 100" style="--x:72%;--y:6%;--s:150px;--z:90px;--d:-4s"><use href="#rz"/></svg>
+<svg class="ob" viewBox="0 0 100 100" style="--x:76%;--y:54%;--s:140px;--z:60px;--d:-1s"><use href="#cb"/></svg>
+<svg class="ob" viewBox="0 0 100 100" style="--x:20%;--y:68%;--s:120px;--z:150px;--d:-3s"><use href="#bt"/></svg>
+<svg class="ob" viewBox="0 0 100 100" style="--x:10%;--y:4%;--s:120px;--z:70px;--d:-5s"><use href="#cl"/></svg>
+<svg class="ob" viewBox="0 0 100 100" style="--x:56%;--y:74%;--s:120px;--z:30px;--d:-6s"><use href="#tw"/></svg>
+</div></div></div></section>
+
+<section id="galeria"><div class="w"><p class="ey r">Galeria</p><h2 class="mt r">GALERIA.</h2><p class="lead r">Composições ilustrativas. Em um projeto real, entram as fotografias da barbearia.</p>
+<div class="gal"><figure class="gt t1 r"><svg viewBox="0 0 200 230" aria-hidden="true"><use href="#ch"/></svg><figcaption>Ambiente</figcaption></figure><figure class="gt t2 r"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#sc"/></svg><figcaption>Barbeiro trabalhando</figcaption></figure><figure class="gt t3 r"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#cl"/></svg><figcaption>Corte</figcaption></figure><figure class="gt t4 r"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#rz"/></svg><figcaption>Barba</figcaption></figure><figure class="gt t5 r"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#cb"/></svg><figcaption>Ferramentas</figcaption></figure><figure class="gt t6 r"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#bt"/></svg><figcaption>Detalhes do espaço</figcaption></figure></div></div></section>
+
+<section id="espelho"><div class="w"><p class="ey r">Transformação</p><h2 class="mt r">ANTES DO ESPELHO.</h2>
+<div class="ba r"><div class="ly"><svg viewBox="0 0 200 240" role="img" aria-label="Silhueta antes: cabelo e barba sem acabamento"><use href="#hd"/><path d="M50 98c-12-50 24-72 54-64 38-8 52 30 42 66-8-22-14-36-48-34s-38 14-48 32z" fill="#0b0c0e"/><path d="M54 110c2 44 22 70 46 70s44-26 46-70c-8 26-20 34-46 34s-38-8-46-34z" fill="#0b0c0e"/></svg></div>
+<div class="ly a2"><svg viewBox="0 0 200 240" role="img" aria-label="Silhueta depois: cabelo e barba alinhados"><use href="#hd"/><path d="M56 88c-2-38 22-52 46-52s48 14 44 52c-8-18-20-26-44-26s-36 8-46 26z" fill="#0b0c0e"/><path d="M62 118c4 26 18 42 38 42s34-16 38-42c-8 14-18 20-38 20s-30-6-38-20z" fill="#0b0c0e"/></svg></div>
+<div class="hn"></div><b style="left:16px">ANTES</b><b style="right:16px">DEPOIS</b>
+<input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois" oninput="this.parentNode.style.setProperty('--p',this.value+'%')"></div>
+<p class="note">Composição demonstrativa. Não representa clientes nem resultados reais.</p></div></section>
+
+<section id="precos"><div class="w"><p class="ey r">Preços</p><h2 class="mt r">ESCOLHA SUA EXPERIÊNCIA.</h2><p class="lead r">Valores demonstrativos, que não representam preços reais.</p>
+<div class="pls"><article class="cd pl r"><h3>ESSENTIAL</h3><p class="pr">R$ 90</p><small>VALOR DEMONSTRATIVO</small><ul><li>Corte masculino</li><li>Acabamento</li></ul><a class="bt gl" href="#agendar">AGENDAR HORÁRIO</a></article>
+<article class="cd pl pm r"><h3 class="au">PREMIUM</h3><p class="pr mt">R$ 160</p><small>VALOR DEMONSTRATIVO</small><ul><li>Corte + barba</li><li>Barba com navalha</li><li>Hidratação</li></ul><a class="bt gd" href="#agendar">AGENDAR HORÁRIO</a></article>
+<article class="cd pl r"><h3>SIGNATURE</h3><p class="pr">R$ 260</p><small>VALOR DEMONSTRATIVO</small><ul><li>Corte + barba</li><li>Camuflagem capilar</li><li>Hidratação</li><li>Consultoria de estilo</li></ul><a class="bt gl" href="#agendar">AGENDAR HORÁRIO</a></article></div></div></section>
+
+<section id="agendar"><div class="w ag"><div class="r"><p class="ey">Agendamento</p><h2 class="mt">SEU PRÓXIMO VISUAL COMEÇA AGORA.</h2><p class="lead">Escolha seu serviço e prepare-se para sua próxima experiência.</p></div>
+<form class="cd r" id="bk"><label class="fw">Nome<input name="n" required autocomplete="name"></label>
+<label class="fw">Serviço<select name="s" required><option value="">Selecione</option><option>Corte masculino</option><option>Barba</option><option>Corte + barba</option><option>Barba com navalha</option><option>Acabamento</option><option>Camuflagem capilar</option><option>Hidratação</option><option>Consultoria de estilo</option></select></label>
+<label>Data<input type="date" id="dt" name="d" required></label><label>Horário<input type="time" name="t" required></label>
+<label class="fw">Telefone<input type="tel" name="p" required autocomplete="tel"></label>
+<button class="bt gd fw" type="submit">AGENDAR HORÁRIO</button><p id="ok" role="status" hidden></p></form></div></section>
+
+<section id="contato"><div class="w"><p class="ey r">Localização</p><h2 class="mt r">ENCONTRE SUA PRÓXIMA EXPERIÊNCIA.</h2>
+<div class="mp r" role="img" aria-label="Mapa ilustrativo"><span class="pin"></span><span class="tg">LOCALIZAÇÃO DEMONSTRATIVA</span></div><p class="note">Mapa meramente ilustrativo, sem endereço real.</p></div></section>
+
+<section id="faq"><div class="w"><p class="ey r">Perguntas frequentes</p><h2 class="mt r">DÚVIDAS.</h2>
+<div class="fq r"><details><summary>Preciso agendar?</summary><p>Em uma barbearia real, o agendamento ajuda a garantir o horário. Resposta demonstrativa.</p></details><details><summary>Quais serviços estão disponíveis?</summary><p>Corte, barba, corte + barba, barba com navalha, acabamento, camuflagem capilar, hidratação e consultoria de estilo. Lista demonstrativa.</p></details><details><summary>Quanto tempo dura o atendimento?</summary><p>A duração varia conforme o serviço. Informação demonstrativa, sem tempos reais.</p></details><details><summary>Posso escolher o barbeiro?</summary><p>Em um projeto real, esta resposta seria definida pela barbearia. Informação demonstrativa.</p></details><details><summary>Vocês atendem sem horário marcado?</summary><p>Em um projeto real, esta resposta seria definida pela barbearia. Informação demonstrativa.</p></details></div></div></section>
+
+<section class="fin"><div class="w"><h2 class="mt r">SEU ESTILO.<br>SEU MOMENTO.</h2><p class="lead r">Uma experiência criada para quem não deixa sua imagem por acaso.</p><a class="bt gd r" href="#agendar">AGENDAR HORÁRIO</a></div></section>
+</main>
+<footer><span class="lg">BARBEARIA</span><ul><li><a href="#inicio">Início</a></li><li><a href="#experiencia">Experiência</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#contato">Contato</a></li></ul><p>Demonstração criada pela Estação Site.</p></footer>
+<script>
+const $=s=>document.querySelector(s),h=$('header'),m=$('#mn'),b=$('#mb');
+const sc=()=>h.classList.toggle('sc',scrollY>40);sc();addEventListener('scroll',sc,{passive:true});
+const tg=o=>{m.classList.toggle('o',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Fechar menu':'Abrir menu');document.body.style.overflow=o?'hidden':''};
+b.onclick=()=>tg(!m.classList.contains('o'));m.onclick=e=>{if(e.target.closest('a'))tg(false)};addEventListener('keydown',e=>{if(e.key=='Escape')tg(false)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.r').forEach(x=>io.observe(x));
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let t;addEventListener('scroll',()=>{t||(t=requestAnimationFrame(()=>{document.documentElement.style.setProperty('--py',Math.min(scrollY,900)+'px');t=0}))},{passive:true});
+const g=$('.sg'),s=$('.st3');if(matchMedia('(hover:hover)').matches)s.addEventListener('pointermove',e=>{const r=s.getBoundingClientRect();g.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*30+'deg');g.style.setProperty('--rx',(8-((e.clientY-r.top)/r.height-.5)*20)+'deg')})}
+$('#dt').min=new Date().toISOString().slice(0,10);
+$('#bk').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target),o=$('#ok');o.hidden=false;o.textContent='Demonstração: nenhum dado foi enviado. Resumo simulado: '+f.get('s')+', '+f.get('d')+' às '+f.get('t')+', em nome de '+f.get('n')+'.'});
+</script>
+</body></html>
